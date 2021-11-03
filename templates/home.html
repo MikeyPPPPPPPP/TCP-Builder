@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> TCP builder</title>
+		<style>
+
+			.wrapper {
+				padding-left: 300px;
+				padding-right: 300px; 
+				display: grid;
+				grid-template-columns: repeat(6, 1fr);
+				gap: 15px;
+				grid-auto-rows: minmax(50px, auto);
+			}
+
+			.SHost {
+				grid-column: 1 / 7;
+				grid-row: 1;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.DHost {
+				grid-column: 1 / 7;
+				grid-row: 2;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.SPort {
+				grid-column: 1 / 4;
+				grid-row: 3;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.DPort {
+				grid-column: 4 / 7;
+				grid-row: 3;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Sequence-Number {
+				grid-column: 1 / 7;
+				grid-row: 4;
+				text-align:  center;
+				font-size:large;
+			}
+			.Acknowledgment-Number {
+				grid-column: 1 / 7;
+				grid-row: 5;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Data-Offset {
+				grid-column: 1 / 2;
+				grid-row: 6;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Reversed {
+				grid-column: 2 / 3;
+				grid-row: 6;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Flags {
+				grid-column: 3 / 4;
+				grid-row: 6;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Window {
+				grid-column: 4 / 7;
+				grid-row: 6;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Checksum {
+				grid-column: 1 / 4;
+				grid-row: 7;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Urgent-Pointer {
+				grid-column: 4 / 7;
+				grid-row: 7;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Option {
+				grid-column: 1 / 5;
+				grid-row: 8;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Padding {
+				grid-column: 5 / 7;
+				grid-row: 8;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Data {
+				grid-column: 1 / 7;
+				grid-row: 9;
+				text-align:  center;
+				font-size:large;
+			}
+
+			.Send {
+				grid-column: 1 / 7;
+				grid-row: 10;
+				text-align:  center;
+				font-size:large;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 style="text-align: center;">TCP Packet Builder</h1>
+		<form action="#" method="POST">
+			<div class="wrapper">
+				<input class="SHost" type="text" placeholder="SHost" name="SHost">
+				<input class="DHost" type="text" placeholder="DHost" name="DHost">
+				<input class="SPort" type="text" placeholder="SPort" name="SPort">
+				<input class="DPort" type="text" placeholder="DPort" name="DPort">
+				<input class="Sequence-Number" type="text" placeholder="Sequence Number" name="Sequence Number">
+				<input class="Acknowledgment-Number" type="text" placeholder="Acknowledgment Number" name="Acknowledgment Number">
+				<input class="Data-Offset" type="text" placeholder="Data Offset" name="Data Offset">
+				<input class="Reversed" type="text" placeholder="Reversed" name="Reversed">
+				<input class="Flags" type="text" placeholder="Flags" name="Flags">
+				<input class="Window" type="text" placeholder="Window" name="Window">
+				<input class="Checksum" type="text" placeholder="Checksum" name="Checksum">
+				<input class="Urgent-Pointer" type="text" placeholder="Urgent Pointer" name="Urgent Pointer">
+				<input class="Option" type="text" placeholder="Option" name="Option">
+				<input class="Padding" type="text" placeholder="Padding" name="Padding">
+				<input class="Data" type="text" placeholder="Data" name="Data">
+				<button class="Send" type="submit">Send</button>
+			</div>
+		</form>
+	<body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
